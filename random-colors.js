@@ -1,6 +1,12 @@
 
 /* ---- GENERATE RANDOMLY COLORED ITEMS ------------------------ */
 
+// Print statement
+function print(message) {
+  document.write(message);
+}
+
+
 // Generate random RGB values
 function randomRGB() {
   return Math.floor(Math.random() * 256);
@@ -24,5 +30,7 @@ for (var i = 0; i < numberOfElements; i++) {
   rgbColor = randomColor();
   html =+ '<div style="background-color:' + rgbColor + '"></div>';
 }
+
+print(html);
 
 /* ---- SOURCE RANDOMLY COLORED ITEMS: teamtreehouse.com --------- */
